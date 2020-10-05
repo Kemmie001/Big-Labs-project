@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1eeff;
+}
+img{
+    width: 100%;
+}
+.top{
+    background-color: #7756fe;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+
+}
+.top::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    border-width: 5vh 100vw;
+    border-style: solid;
+    border-color: #7756fe;
+    border-bottom-color:#f1eeff;
+    border-left-color:#f1eeff;
+}
+.mid{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40% 20%;
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(40deg) skewX(20deg) translateY(25rem) translateX(-4rem);
+    
+}
+.mid2{
+    height: 50vh;
+    width: 100vw;
+    height: 50vh; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40% 20%;
+    transform: rotateX(50deg) rotateY(0deg) rotateZ(40deg) skewX(-20deg) translateY(-20rem) translateX(-4rem);
+    position: absolute;
+}
+.second-section{
+    overflow: hidden;
+    position: relative;
+}
+.mid3{
+    position: absolute;
+    left: 70%;
+    width: 100vw;
+    height: 60vh;
+    background-color: rgb(119, 86, 254,0.3);
+    border-radius: 40% 20%;
+    transform: rotateX(40deg) rotateY(0deg) rotateZ(40deg) skewX(21deg) translateY(25rem) translateX(-1rem);
+   
+} 
+.mid4{
+    position: absolute;
+    right: 30%;
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(119, 86, 254,0.3);
+    border-radius: 40%;
+    
+}
+.fa-sort-up{
+    color: white;
+    
+}
+.image-white{
+    background-color: white;
+    border-radius: 1rem;
+
+}
+.image-white img{
+    margin-top: -15%;
+    height: 40vh;
+}
+.link{
+    color: black;
+}
+.bg-succes{
+    background-color: #2cecc6;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
+.card{
+border: none;
+background-color: #f9f9f9;
+box-shadow:1px 1px 1px #ebe6ff;
+border-radius: 1rem;
+}
+.card-body > h5{
+    padding-top: 2rem;
+}
+.icon{
+    background-color: #8d69fe;
+    border-radius: 50%;
+    padding: 7px;
+    color: white;
+    margin: 0.5rem;
+}
+.purple{
+    background-color:rgb(119, 86, 254,0.3) ;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.icon2{
+    background-color: rgb(119, 86, 254, 0.2);
+    padding: 0.7rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.purple-text{
+    color: #7756fe;
+}
+.green{
+    background-color: rgb(44, 236, 198, 0.3);
+}
+.green-text{
+    color: #2cecc6;
+}
+.orange{
+    background-color:rgb(255, 165, 0, 0.5);
+}
+.orange-text{
+    color: orange;
+}
+.learn{
+    border-radius: 1rem;
+    border: #7756fe solid 0.01rem;
+    background-color: transparent;
+}
+.section-3{
+    /* background-color: #ffffff; */
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns:1fr 1fr 1fr;
+    overflow-x:scroll;
+   -ms-overflow-style: none; 
+   scrollbar-width: 2px;
+
+}
+.section-3::-webkit-scrollbar{
+    display: none
+}
+.image-icon{
+    border-radius: 50%;
+    width: 20%;
+}
+.section-4{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    overflow-x:scroll;
+   -ms-overflow-style: none; 
+   scrollbar-width: 2px;
+}
+.section-4::-webkit-scrollbar{
+    display: none
+}
+.product > div{
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    width: 400px;
+    background-color:white;
+    
+}
+.product1 > div{
+    border-radius: 0.5rem;
+   
+    background-color:white;
+    min-width: 300px;
+}
+
+.last{
+    background-color: #ebe6ff;
+}
+.last li{
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+.social i{
+    padding-left: 1rem;
+}
+@media screen and (max-width:420px){
+    .top{
+        height: 80vh;
+    }
+    .mid{
+        position: absolute;
+        width: 80vw;
+        height: 50vh;
+        background-color: rgb(255, 255, 255, 0.2);
+        border-radius: 10% 50%;
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(40deg) skewX(30deg) translateY(30rem) translateX(-3rem);
+        
+    }
+    .container{
+        font-size: 0.7rem;
+    }
+    .bg-succes{
+        padding: 0.1rem 0.3rem;
+        font-size: 0.6rem;
+    }
+}
+@media screen and (min-width:370px){
+    .top{
+        height: 70vh;
+    }
+    .container{
+        font-size: 1rem;
+    }
+    #navbarSupportedContent{
+        background-color: rgb(119, 86, 254, 0.3);
+    }
+
+}
+@media screen and (min-width:760px){
+    .container{
+        font-size: 1.5rem;
+    }
+    #navbarSupportedContent{
+        background-color: rgb(119, 86, 254, 0.01);
+    }
+    .mid{
+        position: absolute;
+        width: 100vw;
+        height: 50vh;
+        left: -50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 40% 20%;
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(40deg) skewX(20deg) translateY(25rem) translateX(-4rem);
+        
+    }
+    .mid2{
+        height: 50vh;
+        width: 100vw;
+        height: 50vh;
+        right: -30%; 
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 40% 20%;
+        transform: rotateX(50deg) rotateY(0deg) rotateZ(40deg) skewX(-20deg) translateY(-20rem) translateX(-4rem);
+        position: absolute;
+    }
+    .mid3{
+        position: absolute;
+        right: 70%;
+        width: 100vw;
+        height: 60vh;
+        background-color: rgb(119, 86, 254,0.3);
+        border-radius: 40% 20%;
+        transform: rotateX(40deg) rotateY(0deg) rotateZ(40deg) skewX(30deg) translateY(25rem) translateX(10rem);
+       
+    }
+    .mid4{
+        position: absolute;
+        right: 30%;
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(119, 86, 254,0.3);
+        border-radius: 30%;
+        
+    }
+    .image-white img{
+        height: 40vh;
+    }
+}
