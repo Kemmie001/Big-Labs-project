@@ -4,6 +4,11 @@
 }
 body{
     background-color: #f1eeff;
+    
+}
+nav{
+    background-color: rgb(119, 86, 254, 0.5);
+    /* height: 3rem; */
 }
 img{
     width: 100%;
@@ -81,7 +86,7 @@ img{
 }
 .image-white img{
     margin-top: -15%;
-    height: 40vh;
+    height: 30vh;
 }
 .link{
     color: black;
@@ -136,8 +141,9 @@ border-radius: 1rem;
 }
 .learn{
     border-radius: 1rem;
-    border: #7756fe solid 0.01rem;
+    border: #7756fe solid 0.1rem;
     background-color: transparent;
+    font-weight: 700;
 }
 .section-3{
     /* background-color: #ffffff; */
@@ -147,7 +153,6 @@ border-radius: 1rem;
     overflow-x:scroll;
    -ms-overflow-style: none; 
    scrollbar-width: 2px;
-
 }
 .section-3::-webkit-scrollbar{
     display: none
@@ -155,6 +160,24 @@ border-radius: 1rem;
 .image-icon{
     border-radius: 50%;
     width: 20%;
+}
+.pic1{
+    transform: translateY(-1rem) translateX(8rem);
+}
+.pic2{
+    transform: translateX(-2rem) translateY(4rem);
+}
+.pic3{
+    transform: translateX(7rem) translateY(4rem);
+}
+.pic4{
+    transform: translateY(8rem) translateX(-4rem);
+}
+.pic5{
+    transform: translateY(8rem);
+}
+.pic6{
+    transform: translateY(8rem) translateX(10rem);
 }
 .section-4{
     display: grid;
@@ -219,17 +242,10 @@ border-radius: 1rem;
     .container{
         font-size: 1rem;
     }
-    #navbarSupportedContent{
-        background-color: rgb(119, 86, 254, 0.3);
-    }
-
 }
 @media screen and (min-width:760px){
     .container{
-        font-size: 1.5rem;
-    }
-    #navbarSupportedContent{
-        background-color: rgb(119, 86, 254, 0.01);
+        font-size: 1rem;
     }
     .mid{
         position: absolute;
@@ -272,5 +288,33 @@ border-radius: 1rem;
     }
     .image-white img{
         height: 40vh;
+    }
+}
+@media screen and (max-width:768px){
+    .display{
+        display: none;
+    }
+}
+@media screen and (min-width:1280px){
+    .pic1{
+        transform: translateY(-1rem) translateX(12rem);
+    }
+    .pic2{
+        transform: translateX(-4rem) translateY(8rem);
+    }
+    .pic3{
+        transform: translateX(10rem) translateY(8rem);
+    }
+    .pic4{
+        transform: translateY(14rem) translateX(-8rem);
+    }
+    .pic5{
+        transform: translateY(10rem);
+    }
+    .pic6{
+        transform: translateY(11rem) translateX(17rem);
+    }
+    .display{
+        margin-bottom: 5rem;
     }
 }
