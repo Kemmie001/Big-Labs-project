@@ -340,6 +340,6 @@ border-radius: 1rem;
         margin-bottom: 5rem;
     }
     .image-white img{
-        width: 24vw;
+        width: 100%;
     }
 }
