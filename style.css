@@ -85,7 +85,7 @@ img{
 }
 .image-white img{
     margin-top: -15%;
-    height: 30vh;
+    /* height: 30vh; */
     width: 100%;
 }
 .image-white-mentor img{
@@ -222,13 +222,14 @@ border-radius: 1rem;
 
 .last{
     background-color: #ebe6ff;
+    
 }
 .last li{
     list-style-type: none;
     padding-top: 0.5rem;
 }
 .social i{
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 @media screen and (max-width:420px){
     .top{
@@ -308,7 +309,7 @@ border-radius: 1rem;
 @media screen and (max-width:768px){
     
 }
-@media screen and (min-width:1280px){
+@media screen and (min-width:1480px){
     .pic1{
         transform: translateY(-1rem) translateX(12rem);
     }
